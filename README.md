@@ -173,46 +173,49 @@ handleClick = () => {
 ```
 iago/
 |-- public/                  # Static files
-|   |-- index.html           # HTML template
 |   |-- favicon.ico          # Favicon
+|   |-- images/              # Image files
+|   |-- sounds/              # Sound files
+|   |-- fonts/               # Font files
+|  
+|-- pages/                   # Routes and API endpoints
+|   |-- _app.js              # Wrapper component for all routes
+|   |-- _document.js         # Wrapper component for the document structure
+|   |-- index.js             # Corresponds to the home route
+|   |-- api/                 # API routes (serverless functions)
+|   |   |-- auth.js          # Example API route
+|   |   |-- ...
 |
-|-- src/                     # Source files
-|   |-- assets/              # Uncompiled/raw CSS, LESS, Sass, images, sounds, etc.
-|   |   |-- images/          # Image files
-|   |   |-- sounds/          # Sound files
-|   |   |-- fonts/           # Font files
+|-- src/                     # Source files (It's optional, but you can keep non-page logic here)
+|   |-- assets/              # Uncompiled/raw CSS, LESS, Sass, etc. (can be moved to public if they're static)
 |   |
 |   |-- components/          # React components
 |   |   |-- Button/          # Each component gets its own folder
 |   |   |   |-- index.jsx    # Main file for the Button component
-|   |   |   |-- styles.css   # Styles specific to Button
+|   |   |   |-- styles.module.css   # Styles specific to Button using CSS Modules
 |   |   |
 |   |   |-- Header/
 |   |   |   |-- index.jsx
-|   |   |   |-- styles.css
+|   |   |   |-- styles.module.css
 |   |   |
 |   |   |-- ...
 |   |
 |   |-- utils/               # Utility functions and classes
-|   |
+|   |  
+|   |-- services/            # Services folder for functionalities like interacting with APIs, database, etc.
+|   |   |-- apiService.js    # Service for making API calls
+|   |   |-- ...
+|
 |   |-- styles/              # Global styles
 |   |   |-- main.css         # Main stylesheet
 |   |   |-- variables.css    # CSS variables and mixins
 |   |   |-- ...
-|   |  
-|   |-- services/             # Scripts folder for large features
-|   |   |-- auth.js           # Example script 1
-|   |   |-- api.js            # Example script 2
-|   |   |-- ...
-|   |
-|   |-- App.jsx              # Main App component
-|   |-- index.js             # Entry point for the app
+|
+|-- styles/                  # Global styles (if you want to keep it outside src)
+|   |-- globals.css          # Global styles
 |
 |-- package.json             # List of project dependencies and scripts
 |-- README.md                # Project documentation
 |-- .gitignore               # Files and folders to be ignored by Git
 |-- ...
-
 ```
-
----
