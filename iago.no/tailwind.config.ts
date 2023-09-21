@@ -16,8 +16,12 @@ const config: Config = {
       },
       colors: {
         'main-color': mainColor,
+        'background-color': 'white',
         'light-color': '#81A3A2',
         'font-color': mainColor,
+      },
+      padding: {
+        'standard': '6rem',
       }
     },
   },

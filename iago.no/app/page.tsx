@@ -2,7 +2,7 @@ import DataDisplay from '../components/DataDisplay'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-[calc(100vh-6rem)] flex-col items-center justify-between p-standard">
       <div className="w-full">
         <DataDisplay 
           title="Våre resultater i tall"
