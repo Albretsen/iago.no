@@ -14,12 +14,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'main-color:': mainColor,
+        'light-color:': '#81A3A2',
+        'font-color': mainColor,
+      }
     },
-    colors: {
-      'main-color:': mainColor,
-      'light-color:': '#81A3A2',
-      'text-color': mainColor,
-    }
   },
   plugins: [],
 }
