@@ -3,9 +3,9 @@ import DataDisplay from '../components/DataDisplay'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
+      <div className="w-full">
         <DataDisplay 
-          title="tsests"
+          title="Våre resultater i tall"
           dataSets={[
             {
               number: '100',
@@ -17,9 +17,18 @@ export default function Home() {
               suffix: 'K+',
               label: 'Nedlastinger'
             },
+            {
+              number: '10',
+              suffix: 'K+',
+              label: 'Registrerte brukere'
+            },
+            {
+              number: '24',
+              suffix: '/7',
+              label: 'Oppetid'
+            },
         ]}
         />
-        <p className="text-blue-400">Hello</p>
       </div>
     </main>
   )
