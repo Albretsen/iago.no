@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+import colors from './constants/colors';
 
 const mainColor = '#08605F';
 const config: Config = {
